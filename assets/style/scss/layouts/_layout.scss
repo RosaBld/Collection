@@ -1,0 +1,60 @@
+body {
+    background: rgb(133,0,0);
+    background: linear-gradient(166deg, rgba(133,0,0,1) 0%, rgba(82,33,33,1) 35%, rgba(0,0,0,1) 100%); 
+    .myCollection {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        
+        .card {
+            display: grid;
+            justify-content: center;
+            align-items:center;
+            max-width: 1500px;
+            background-color: rgb(95, 86, 86);
+            max-width: 250px;
+            padding: 10px;
+            height: 1200px;
+            
+            &:hover {
+                box-shadow: 5px -15px 25px rgb(65, 11, 11);
+            }
+            img.cover {
+                max-width: 250px;
+                z-index: 0;
+                height: 370px;
+            }
+            
+            .genre {
+                height: 40px;
+            }
+            
+            .info {
+                border-bottom: solid grey 5px;
+                .table {
+                    display:grid;
+                    grid-template-columns: auto auto;
+                    grid-column: 1/2;
+                }
+            }
+            .about {
+                border-bottom: solid grey 5px;
+                height: 547px;
+            }
+
+            .end {
+                border-bottom: solid grey 5px;
+            }
+
+            .trailer {
+                .logo {
+                    margin-left: 40%;
+                    margin-top: 10px;
+                    max-width: 40px;
+                }
+            }
+        }
+    }
+}

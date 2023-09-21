@@ -362,51 +362,198 @@ body {
   background: rgb(133, 0, 0);
   background: linear-gradient(166deg, rgb(133, 0, 0) 0%, rgb(82, 33, 33) 35%, rgb(0, 0, 0) 100%);
 }
-body .myCollection {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+
+@media only screen and (min-width: 320px) and (max-width: 524px) {
+  .myCollection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .myCollection .card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 200px;
+    background-color: rgb(95, 86, 86);
+    padding: 10px;
+  }
+  .myCollection:hover {
+    box-shadow: 5px -15px 25px rgb(65, 11, 11);
+  }
+  .myCollection .cover {
+    max-width: 200px;
+  }
+  .myCollection .trailer .logo {
+    margin-left: 40%;
+    margin-top: 10px;
+    max-width: 40px;
+  }
+  .myCollection .genre {
+    margin-top: -50px;
+  }
+  .myCollection .info {
+    border-bottom: solid grey 5px;
+    margin-top: -50px;
+  }
+  .myCollection .about {
+    border-bottom: solid grey 5px;
+    margin-top: -50px;
+  }
+  .myCollection .end {
+    border-bottom: solid grey 5px;
+    margin-top: -50px;
+  }
+  .myCollection .trailer {
+    margin-top: -50px;
+  }
 }
-body .myCollection .card {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  max-width: 1500px;
-  background-color: rgb(95, 86, 86);
-  max-width: 250px;
-  padding: 10px;
-  height: 1200px;
+@media only screen and (min-width: 524px) and (max-width: 768px) {
+  .myCollection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .myCollection .card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    min-width: 200px;
+    max-width: 500px;
+    background-color: rgb(95, 86, 86);
+    padding: 10px;
+  }
+  .myCollection:hover {
+    box-shadow: 5px -15px 25px rgb(65, 11, 11);
+  }
+  .myCollection .cover {
+    min-width: 200px;
+    max-width: 500px;
+  }
+  .myCollection .trailer .logo {
+    margin-left: 48%;
+    margin-top: 10px;
+    max-width: 40px;
+  }
+  .myCollection .genre {
+    margin-top: -50px;
+  }
+  .myCollection .info {
+    border-bottom: solid grey 5px;
+    margin-top: -50px;
+  }
+  .myCollection .about {
+    border-bottom: solid grey 5px;
+    margin-top: -50px;
+  }
+  .myCollection .end {
+    border-bottom: solid grey 5px;
+    margin-top: -50px;
+  }
+  .myCollection .trailer {
+    margin-top: -50px;
+  }
 }
-body .myCollection .card:hover {
-  box-shadow: 5px -15px 25px rgb(65, 11, 11);
+@media only screen and (min-width: 1024px) and (max-width: 1226px) {
+  .myCollection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .myCollection .card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    background-color: rgb(95, 86, 86);
+    max-width: 250px;
+    padding: 10px;
+    height: 1200px;
+  }
+  .myCollection .card:hover {
+    box-shadow: 5px -15px 25px rgb(65, 11, 11);
+  }
+  .myCollection .card img.cover {
+    max-width: 250px;
+    z-index: 0;
+    height: 370px;
+  }
+  .myCollection .card .genre {
+    height: 40px;
+  }
+  .myCollection .card .info {
+    border-bottom: solid grey 5px;
+  }
+  .myCollection .card .info .table {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 1/2;
+  }
+  .myCollection .card .about {
+    border-bottom: solid grey 5px;
+    height: 547px;
+  }
+  .myCollection .card .end {
+    border-bottom: solid grey 5px;
+  }
+  .myCollection .card .trailer .logo {
+    margin-left: 40%;
+    margin-top: 10px;
+    max-width: 40px;
+  }
 }
-body .myCollection .card img.cover {
-  max-width: 250px;
-  z-index: 0;
-  height: 370px;
-}
-body .myCollection .card .genre {
-  height: 40px;
-}
-body .myCollection .card .info {
-  border-bottom: solid grey 5px;
-}
-body .myCollection .card .info .table {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column: 1/2;
-}
-body .myCollection .card .about {
-  border-bottom: solid grey 5px;
-  height: 547px;
-}
-body .myCollection .card .end {
-  border-bottom: solid grey 5px;
-}
-body .myCollection .card .trailer .logo {
-  margin-left: 40%;
-  margin-top: 10px;
-  max-width: 40px;
+@media only screen and (min-width: 1226px) and (max-width: 2560px) {
+  .myCollection {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .myCollection .card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    background-color: rgb(95, 86, 86);
+    max-width: 250px;
+    padding: 10px;
+    height: 1200px;
+  }
+  .myCollection .card:hover {
+    box-shadow: 5px -15px 25px rgb(65, 11, 11);
+  }
+  .myCollection .card img.cover {
+    max-width: 250px;
+    z-index: 0;
+    height: 370px;
+  }
+  .myCollection .card .genre {
+    height: 40px;
+  }
+  .myCollection .card .info {
+    border-bottom: solid grey 5px;
+  }
+  .myCollection .card .info .table {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 1/2;
+  }
+  .myCollection .card .about {
+    border-bottom: solid grey 5px;
+    height: 547px;
+  }
+  .myCollection .card .end {
+    border-bottom: solid grey 5px;
+  }
+  .myCollection .card .trailer .logo {
+    margin-left: 40%;
+    margin-top: 10px;
+    max-width: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

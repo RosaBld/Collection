@@ -1,3 +1,5 @@
+# The Collection!
+
 Hi there!
 
 You are on my project The Collection.
@@ -20,3 +22,12 @@ Once everything seemed to look in order, it was time to tacle the SASS and makin
 Unfortunately, I didn't have the time to battle with the bonus exercice. I hope to find some more time to do it eventually and finish this exercice completely.
 
 Hope you enjoy!
+
+---
+
+#### Languages: 
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
